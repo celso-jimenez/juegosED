@@ -175,10 +175,10 @@ var game = {
     stop: false,
     alertShown: false,
     isGameOver: function (ball, canvas) {
-        return enemyScore >= 5;
+        return enemyScore >= 3;
     },
     isGameWon: function () {
-        return playerScore >= 5;
+        return playerScore >= 3;
     },
     gameOver: function () {
         if (!this.alertShown) {
