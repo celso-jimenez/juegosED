@@ -7,8 +7,8 @@
 var canvas = document.getElementById("pongCanvas");
 var ctx = canvas.getContext("2d");
 
-var BALL_COLOR = "#FFFFFF";
-var PADDLE_COLOR = "#FFFFFF";
+var BALL_COLOR = "#FF0000";
+var PADDLE_COLOR = "#FFF000";
 var LINE_COLOR = "#666666";
 
 var scored = "none";
