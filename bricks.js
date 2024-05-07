@@ -133,6 +133,7 @@ for (var i = 0; i < 80; i++) {
 	bricks.push({
 		height: 12,
 		width: 33,
+
 		position: { x: 0, y: 0 },
 		color: BRICK_COLORS[0],
 		status: true,
