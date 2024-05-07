@@ -4,25 +4,25 @@ function playSound(sound){
 }
 
 function writeText(text) {
-    ctx.font = "30px Monospace";
+    ctx.font = "30px Arial";
     ctx.textAlign = "center";
     ctx.fillText(text, canvas.width / 2, canvas.height / 2);
 }
 
 function writePoints(text) {
-    ctx.font = "12px Monospace";
+    ctx.font = "12px Arial";
     ctx.textAlign = "left";
     ctx.fillText(text, 12, canvas.height);
 }
 
 function writeSubText(text) {
-    ctx.font = "20px Monospace";
+    ctx.font = "20px Arial";
     ctx.textAlign = "center";
     ctx.fillText(text, canvas.width / 2, canvas.height / 2 + 30);
 }
 
 function writeScore(text) {
-    ctx.font = "20px Monospace";
+    ctx.font = "20px Arial";
     ctx.textAlign = "center";
     ctx.fillText(text, canvas.width / 2, 20);
 }
@@ -31,7 +31,7 @@ var initialSeconds = Math.floor(Date.now() / 1000)
 
 function writeTime() {
     var seconds = Math.floor(Date.now() / 1000) - initialSeconds;
-    ctx.font = "12px Monospace";
+    ctx.font = "12px Arial";
     ctx.textAlign = "right";
     ctx.fillText(seconds, canvas.width - 12, canvas.height);
 }
