@@ -18,7 +18,7 @@ var enemyScore = 0;
 var ball = {
 	position: { x: 0, y: 0 },
 	velocity: { x: 0, y: 0 },
-	radius: 10,
+	radius: 50,
 	color: BALL_COLOR,
 	colliderDifference: 5,
 	physics: [],
@@ -190,8 +190,8 @@ var game = {
     },
     gameWon: function () {
         if (!this.alertShown) {
-            writeText("YOU WON");
-            writeSubText("click to reload");
+            writeText("Ganaste");
+            writeSubText("Haga clic para recargar");
             playSound('win');
         }
         this.alertShown = true;
