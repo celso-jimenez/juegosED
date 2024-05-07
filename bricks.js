@@ -7,9 +7,9 @@
 var canvas = document.getElementById("bricksCanvas");
 var ctx = canvas.getContext("2d");
 
-var BALL_COLOR = "#FFFFFF";
-var PADDLE_COLOR = "#8e8e8e";
-var BRICK_COLORS = ["#c84848", "#c66c3a", "#a2a22a", "#48a048", "#4248c8"];
+var BALL_COLOR = "#fb00ff";
+var PADDLE_COLOR = "#00ffe4";
+var BRICK_COLORS = ["#1bff00", "#ff0000	", "fff700", "#002eff", "#9b00ff"];
 
 var ball = {
 	position: { x: 0, y: 0 },
@@ -129,10 +129,10 @@ var paddle = {
 
 var bricks = [];
 
-for (var i = 0; i < 40; i++) {
+for (var i = 0; i < 80; i++) {
 	bricks.push({
 		height: 12,
-		width: 50,
+		width: 30,
 		position: { x: 0, y: 0 },
 		color: BRICK_COLORS[0],
 		status: true,

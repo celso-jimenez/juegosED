@@ -49,8 +49,8 @@ var rect = {
 
 var food = {
 	position: { x: 0, y: 0 },
-    height: 10,
-    width: 10,
+    height: 20,
+    width: 19,
     color: FOOD_COLOR,
     draw: function (canvasContext) {
         canvasContext.beginPath();
@@ -86,11 +86,11 @@ var snake = {
     command: "up",
     using: "up",
 	control: function (canvas) {
-        if (controls.rightPressed && !(this.using == "left")) {
+        if (controls.rightPressed && !(this.using == "right")) {
             this.command = "right";
 		}
-        else if (controls.leftPressed && !(this.using == "right")) {
-            this.command = "left";
+        else if (controls.leftPressed && !(this.using == "left")) {
+            this.command = "right";
 		}
         else if (controls.upPressed && !(this.using == "down")) {
             this.command = "up";
@@ -195,16 +195,16 @@ var game = {
     },
     gameOver: function () {
         if (!this.alertShown) {
-            writeText("MUELTO");
-            writeSubText("click to reload");
+            writeText("MUELTO" );
+            writeSubText("toca algo");
             playSound('gameover');
         }
         this.alertShown = true;
     },
     gameWon: function () {
         if (!this.alertShown) {
-            writeText("YOU WON");
-            writeSubText("click to reload");
+            writeText("HAS GANADO MAKINON");
+            writeSubText("CLICKA PA VOLVER HA INTENTARLO BROTHER");
             playSound('win');
         }
         this.alertShown = true;
