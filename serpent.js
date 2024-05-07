@@ -195,8 +195,8 @@ var game = {
     },
     gameOver: function () {
         if (!this.alertShown) {
-            writeText("MUELTO");
-            writeSubText("click to reload");
+            writeText("MUELTO" );
+            writeSubText("toca algo");
             playSound('gameover');
         }
         this.alertShown = true;
