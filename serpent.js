@@ -203,8 +203,8 @@ var game = {
     },
     gameWon: function () {
         if (!this.alertShown) {
-            writeText("YOU WON");
-            writeSubText("click to reload");
+            writeText("HAS GANADO MAKINON");
+            writeSubText("CLICKA PA VOLVER HA INTENTARLO BROTHER");
             playSound('win');
         }
         this.alertShown = true;
