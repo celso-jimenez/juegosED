@@ -18,7 +18,7 @@ var enemyScore = 0;
 var ball = {
 	position: { x: 0, y: 0 },
 	velocity: { x: 0, y: 0 },
-	radius: 10,
+	radius: 18,
 	color: BALL_COLOR,
 	colliderDifference: 5,
 	physics: [],
