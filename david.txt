@@ -1,1 +1,5 @@
-el nano ehhhhhhhhh el nano aohhhhhhhhh
+<<<<<<< HEAD
+el atleti a segunda
+=======
+el nano ah ehhhhhhhhhhhhh
+>>>>>>> 1690f6ffc4eb8395ac4c203de48df9dd7f10017d

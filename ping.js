@@ -7,8 +7,8 @@
 var canvas = document.getElementById("pongCanvas");
 var ctx = canvas.getContext("2d");
 
-var BALL_COLOR = "#FFFFFF";
-var PADDLE_COLOR = "#FFFFFF";
+var BALL_COLOR = "#FF0000";
+var PADDLE_COLOR = "#FFF000";
 var LINE_COLOR = "#666666";
 
 var scored = "none";
@@ -18,7 +18,7 @@ var enemyScore = 0;
 var ball = {
 	position: { x: 0, y: 0 },
 	velocity: { x: 0, y: 0 },
-	radius: 10,
+	radius: 50,
 	color: BALL_COLOR,
 	colliderDifference: 5,
 	physics: [],
@@ -182,16 +182,16 @@ var game = {
     },
     gameOver: function () {
         if (!this.alertShown) {
-            writeText("GAME OVER");
-            writeSubText("click to reload");
+            writeText("Has Perdido");
+            writeSubText("click para volver a jugar");
             playSound('gameover');
         }
         this.alertShown = true;
     },
     gameWon: function () {
         if (!this.alertShown) {
-            writeText("YOU WON");
-            writeSubText("click to reload");
+            writeText("Ganaste");
+            writeSubText("Haga clic para recargar");
             playSound('win');
         }
         this.alertShown = true;
