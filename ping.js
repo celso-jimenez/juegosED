@@ -190,8 +190,8 @@ var game = {
     },
     gameWon: function () {
         if (!this.alertShown) {
-            writeText("YOU WON");
-            writeSubText("click to reload");
+            writeText("Ganaste");
+            writeSubText("Haga clic para recargar");
             playSound('win');
         }
         this.alertShown = true;
