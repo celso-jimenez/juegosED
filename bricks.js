@@ -129,7 +129,7 @@ var paddle = {
 
 var bricks = [];
 
-for (var i = 0; i < 40; i++) {
+for (var i = 0; i < 80; i++) {
 	bricks.push({
 		height: 12,
 		width: 50,
